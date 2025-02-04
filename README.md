@@ -11,14 +11,13 @@ Part 1 - Google Apps Script:
 -
  - Create a New [Google Apps Script](https://script.new)
  - Paste the following code in the editor 
-`function doGet(e) {
-  var threads = GmailApp.getInboxThreads()
-  for (x=0; x<threads.length; x++) {
-    if (threads[x].getFirstMessageSubject().includes('No-IP Verification Code:')) {
-      var code = threads[x].getFirstMessageSubject().split(': ')[1]
-      break}}
-  return HtmlService.createHtmlOutput(`&${code}&`)
-}`
+`
+function doGet(e) {var threads = GmailApp.getInboxThreads(); for (x=0; x<threads.length; x++) {
+if (threads[x].getFirstMessageSubject().includes('No-IP Verification Code:')) {
+var code = threads[x].getFirstMessageSubject().split(': ')[1]; break}}
+return HtmlService.createHtmlOutput('&'+code+'&')
+}
+`
  - Publish as a web app
 	 - Click 'Deploy' in the top right
 	 - Click 'New Deployment'
@@ -37,7 +36,11 @@ Part 2 - Configuring Logins.txt
 
 Part 3 - Installing Repositories
 -
-- Please paste the following code into your terminal
-	- Try changing 'pip' to 'pip3' if the pip command is not found
-    code goes here
+- Install the following repositories
+	- `pip install selenium`
+	- `pip install requests`
+
+Part 4 - Running the Script
+-
+- To run the script, just simply `cd` into the directory with the script files and run  `python run.py`
 
