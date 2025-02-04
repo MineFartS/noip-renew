@@ -10,7 +10,7 @@ Please Note
 
 [noip.com](https://www.noip.com/) free hosts expire every month.
 This script auto clicks web pages to renew the hosts,
-using Python/Selenium with Chrome headless mode.
+using Python/Selenium with FireFox headless mode.
 
 Part 1 - Google Apps Script:
 -
