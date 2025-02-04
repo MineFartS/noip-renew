@@ -1,7 +1,12 @@
 
+
 # Script to auto renew/confirm noip.com free hosts
 
-Please Note: This only works with gmail emails
+Please Note
+-
+- This Script is not yet finished.
+- This Script only works with Only Gmail Users
+
 
 [noip.com](https://www.noip.com/) free hosts expire every month.
 This script auto clicks web pages to renew the hosts,
@@ -11,13 +16,16 @@ Part 1 - Google Apps Script:
 -
  - Create a New [Google Apps Script](https://script.new)
  - Paste the following code in the editor 
-`
-function doGet(e) {var threads = GmailApp.getInboxThreads(); for (x=0; x<threads.length; x++) {
-if (threads[x].getFirstMessageSubject().includes('No-IP Verification Code:')) {
-var code = threads[x].getFirstMessageSubject().split(': ')[1]; break}}
-return HtmlService.createHtmlOutput('&'+code+'&')
+>function doGet(e) {
+    var threads = GmailApp.getInboxThreads();
+    for (x = 0; x < threads.length; x++) {
+        if (threads[x].getFirstMessageSubject().includes('No-IP Verification Code:')) {
+            var code = threads[x].getFirstMessageSubject().split(': ')[1];
+            break
+        }
+    }
+    return HtmlService.createHtmlOutput('&' + code + '&')
 }
-`
  - Publish as a web app
 	 - Click 'Deploy' in the top right
 	 - Click 'New Deployment'
