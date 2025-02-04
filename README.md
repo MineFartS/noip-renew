@@ -1,6 +1,15 @@
 
 
-# Script to auto renew/confirm noip.com free hosts
+# Automatically confirm noip.com free hosts
+
+[noip.com](https://www.noip.com/) free hosts expire every month.
+This script uses [Selenium](https://www.selenium.dev/) and [GAS](https://script.google.com/home) to automatically renew hosts
+
+-[Selenium](https://www.selenium.dev/) is used to automatically navigate No-IP.com to renew the hosts.
+-[GAS](https://script.google.com/home) is used to grab the OPTs from your gmail inbox. 
+.
+
+
 
 Please Note
 -
@@ -8,9 +17,6 @@ Please Note
 - This Script only works with Only Gmail Users
 
 
-[noip.com](https://www.noip.com/) free hosts expire every month.
-This script auto clicks web pages to renew the hosts,
-using Python/Selenium with FireFox headless mode.
 
 Part 1 - Google Apps Script:
 -
