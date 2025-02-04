@@ -5,8 +5,8 @@
 [noip.com](https://www.noip.com/) free hosts expire every month.
 This script uses [Selenium](https://www.selenium.dev/) and [GAS](https://script.google.com/home) to automatically renew hosts
 
--[Selenium](https://www.selenium.dev/) is used to automatically navigate No-IP.com to renew the hosts.
--[GAS](https://script.google.com/home) is used to grab the OPTs from your gmail inbox. 
+ - [Selenium](https://www.selenium.dev/) is used to automatically navigate No-IP.com to renew the hosts.
+ - [GAS](https://script.google.com/home) is used to grab the OPTs from your gmail inbox. 
 .
 
 
