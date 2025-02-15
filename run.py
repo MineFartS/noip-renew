@@ -11,7 +11,7 @@ with open("logins.txt", "r") as logindata:
 
     options = Options()
     options.add_argument("--headless")
-    browser = webdriver.Chrome(options=options, )
+    browser = webdriver.Chrome(options=options)
 
     browser.get("https://www.noip.com/login")
 
