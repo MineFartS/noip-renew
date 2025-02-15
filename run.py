@@ -15,7 +15,7 @@ with open("logins.txt", "r") as logindata:
 
     browser.get("https://www.noip.com/login")
 
-    print('\n  ---  Logging in with username and password from "logins.txt"\n')
+    print('\n  ---  Logging in with username and password from "Logins.txt"\n')
 
     # Enter No-IP Username and Password
     browser.find_element(By.ID,"username").send_keys(email.strip())
