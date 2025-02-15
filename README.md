@@ -13,7 +13,7 @@ This script uses [Selenium](https://www.selenium.dev/) and [GAS](https://script.
 
 Please Note
 -
-- This Script is not yet finished.
+- This Script has not yet been thoroughly tested.
 - This Script only works with Only Gmail Users
 
 
