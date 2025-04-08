@@ -14,13 +14,14 @@ Part 1 - Google Apps Script API:
 -
  - Create a New [Google Apps Script](https://script.new)
  - Paste the following code in the editor:
+`function doGet(e) {
+    const threads = GmailApp.getInboxThreads() for (x = 0; x < threads.length; x++) {
+        if (threads[x].getFirstMessageSubject().includes(“No - IP Verification Code: ”)) {
+            return ContentService.createTextOutput(threads[x].getFirstMessageSubject().split(": ")[1])
+        }
+    }
+}`
 
-function  doGet(e) {
-	const  threads = GmailApp.getInboxThreads()
-	for (x = 0; x< threads.length; x++) {
-		if (threads[x].getFirstMessageSubject().includes('No-IP Verification Code:')) {
-			return  ContentService.createTextOutput(threads[x].getFirstMessageSubject().split(': ')[1])
-		}}}
  - Publish as a web app
 	 - Click 'Deploy' in the top right
 	 - Click 'New Deployment'
