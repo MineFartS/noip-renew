@@ -1,3 +1,0 @@
-** Google Apps Script URL **
-** No-IP Username/Email **
-** No-IP Password **

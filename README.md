@@ -1,6 +1,4 @@
 
-
-
 # Automatically confirm noip.com free hosts
 
 [noip.com](https://www.noip.com/) free hosts expire every month.
@@ -30,12 +28,10 @@ Part 1 - Google Apps Script API:
 	 - Click 'Allow'
 	 - Copy the Web App URL
 	  
-Part 2 - Configuration
--
- - On line 1 of 'Config.txt', paste the Web App URL
- - On line 2 of 'Config.txt', type the email for your No-IP Account
- - On line 3 of 'Config.txt', type the password for your No-IP Account
-
-Part 3 - Execution
+Part 2 - Execution
 -
 - To run the script, `cd` into the directory with the script files and run  `python run.py`
+- The script will ask you for the following during the initial execution:
+    1. Apps Script URL
+    2. NoIP Email
+    3. NoIP Password
