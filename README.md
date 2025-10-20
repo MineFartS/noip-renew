@@ -30,8 +30,10 @@ Part 1 - Google Apps Script API:
 	  
 Part 2 - Execution
 -
-- To run the script, `cd` into the directory with the script files and run  `python run.py`
+- Install: `pip install noiprenew`
+- Run: `python -m noiprenew`
 - The script will ask you for the following during the initial execution:
     1. Apps Script URL
     2. NoIP Email
     3. NoIP Password
+- To reset the script, run `python -m noiprenew reset`
