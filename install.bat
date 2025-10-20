@@ -2,6 +2,4 @@
 
 cd /d "%~dp0"
 
-python run.py
-
-pause
+pip install --upgrade .
