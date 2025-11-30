@@ -38,15 +38,19 @@ if (len(driver.element('ID', "firstInput", False)) > 0):
     # Enter 2FA code
     driver.element('ID', "firstInput")[0].send_keys(code)
 
-    input('...')
-
 # ==================================================================
 
 driver.open("https://my.noip.com/dynamic-dns")
 
-# TODO
+# Click 'Confirm'
+driver.element(
+    'xpath',
+    '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div[3]/div/div[2]/a'
+)[0].click()
 
-input('...')
+# Refresh the page
+driver.reload()
+
+# TODO (Bypass reCaptcha)
 
 # ==================================================================
-
